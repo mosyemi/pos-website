@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Prime Nova POS Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Info Bar and Navigation -->
+    <div class="simba-frame">
+        <!-- Info Bar -->
+        <div class="info-bar">
+            <span><i class="bi bi-geo-alt"></i> Madukani, Kijabe street, Kijabe</span>
+            <span><i class="bi bi-clock"></i> Mon - Sat: 9:00 - 18:00 | Sunday CLOSED</span>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <span><i class="bi bi-telephone"></i> +254 765 655130 | +254 742 784172</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark p-3 sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Prime Nova POS Logo" class="navbar-logo">
+                    Prime Nova POS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pos-software.html">POS Software</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <button class="theme-toggle-btn nav-link" onclick="toggleTheme()">
+                                <i class="bi bi-moon-stars-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">About Prime Nova POS</h1>
+                    <p class="lead mb-0">Empowering businesses across Kenya with cutting-edge POS solutions since 2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <!-- Hero Section -->
+    <section class="about-hero py-6" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold mb-4 text-white">Empowering Kenyan Businesses with Smart POS Solutions</h1>
+                    <p class="lead mb-5 text-white-80" style="font-size: 1.4rem; opacity: 0.9;">Transforming the way businesses operate across Kenya with innovative, reliable, and affordable point of sale systems</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#solutions" class="btn btn-light btn-lg px-5 fw-bold" style="background: white; color: #1e3a8a;">Our Solutions</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 fw-bold" style="border: 2px solid white;">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-4 shadow" alt="Prime Nova POS Team">
+                        <div class="position-absolute top-0 start-0 translate-middle bg-primary text-white p-3 rounded-circle shadow d-none d-md-block">
+                            <i class="bi bi-trophy fs-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">WHO WE ARE</span>
+                    <h2 class="display-5 fw-bold mb-4">Your Trusted POS Partner in Kenya</h2>
+                    <p class="lead mb-4">Prime Nova POS is an innovative, reliable, and easy-to-use Point of Sale solution designed specifically for the Kenyan market. Since our establishment, we've been committed to helping businesses of all sizes streamline their operations and maximize profitability.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check2-circle fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Proven Track Record</h5>
+                                    <p class="text-muted mb-0">Trusted by 500+ businesses across Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-headset fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">24/7 Support</h5>
+                                    <p class="text-muted mb-0">Dedicated local support team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Our comprehensive POS solutions are designed to meet the specific needs of various industries, including restaurants, retail stores, supermarkets, and more. We combine cutting-edge technology with local market understanding to deliver exceptional value to our clients.</p>
+                    <p>Today, we serve hundreds of businesses across various industries, from retail stores and restaurants to supermarkets and service providers. Our commitment to innovation, customer satisfaction, and local support has been the cornerstone of our success.</p>
+                    <div class="row g-4 mt-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h5 fw-bold mb-1">Our Mission</h5>
+                                    <p class="mb-0">To empower businesses with innovative POS solutions that drive growth and efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-eye-fill fs-3"></i>
+                                </div>
+                                <div>
+                                    <h5 class="h5 fw-bold mb-1">Our Vision</h5>
+                                    <p class="mb-0">To be the leading POS solutions provider in East Africa by 2030.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <!-- Our Mission Section -->
+    <section class="py-6 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-4 shadow" alt="Our Mission">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">OUR MISSION</span>
+                    <h2 class="display-5 fw-bold mb-4">Driving Business Success Through Innovation</h2>
+                    <p class="lead mb-4">At Prime Nova POS, our mission is to empower Kenyan businesses with technology that drives growth and efficiency.</p>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Streamline Operations</h5>
+                            <p class="text-muted">Automate and optimize your business processes for maximum efficiency</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Enhance Customer Experience</h5>
+                            <p class="text-muted">Deliver exceptional service with faster transactions and better insights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Maximize Profits</h5>
+                            <p class="text-muted">Gain valuable business insights to make data-driven decisions</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#solutions" class="btn btn-primary mt-3">Explore Our Solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-6" id="values">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">OUR VALUES</span>
+                <h2 class="display-5 fw-bold mb-3">What We Stand For</h2>
+                <p class="lead text-muted">Our core values guide everything we do at Prime Nova POS</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+                        <div class="icon-box bg-primary-soft text-primary mb-4">
+                            <i class="bi bi-shield-check fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Integrity First</h3>
+                        <p class="text-muted">We build trust through honesty, transparency, and ethical business practices in all our interactions.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="#" class="text-primary text-decoration-none">Learn more <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+                        <div class="icon-box bg-primary-soft text-primary mb-4">
+                            <i class="bi bi-lightbulb fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Innovation Driven</h3>
+                        <p class="text-muted">We continuously evolve our solutions to stay ahead of industry trends and technological advancements.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="#" class="text-primary text-decoration-none">Our Technology <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+                        <div class="icon-box bg-primary-soft text-primary mb-4">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Customer Success</h3>
+                        <p class="text-muted">Your growth is our success. We're committed to providing exceptional support and tailored solutions.</p>
+                        <div class="mt-auto pt-3">
+                            <a href="contact.html" class="text-primary text-decoration-none">Get Support <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <!-- Industries We Serve -->
+    <section class="py-6 bg-light" id="solutions">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">OUR SOLUTIONS</span>
+                <h2 class="display-5 fw-bold mb-3">Tailored POS Solutions for Every Business</h2>
+                <p class="lead text-muted">Comprehensive POS systems designed for your industry</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary-soft text-primary mb-4">
+                                <i class="bi bi-cup-hot fs-2"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Restaurant & Bar POS</h3>
+                            <p class="text-muted">Streamline your F&B operations with our specialized restaurant and bar management system.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Table management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Kitchen display system</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Inventory tracking</li>
+                            </ul>
+                            <a href="restaurant-pos.html" class="btn btn-outline-primary mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary-soft text-primary mb-4">
+                                <i class="bi bi-cart-check fs-2"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Retail POS</h3>
+                            <p class="text-muted">Complete retail management solution for shops, boutiques, and stores of all sizes.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Barcode scanning</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Customer loyalty</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Sales analytics</li>
+                            </ul>
+                            <a href="retail-pos.html" class="btn btn-outline-primary mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="icon-box bg-primary-soft text-primary mb-4">
+                                <i class="bi bi-basket fs-2"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Supermarket POS</h3>
+                            <p class="text-muted">Advanced POS system designed for supermarkets and grocery stores.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Inventory management</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Multi-branch support</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Expiry tracking</li>
+                            </ul>
+                            <a href="supermarket-pos.html" class="btn btn-outline-primary mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="pos-software.html" class="btn btn-primary px-5">View All Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-6 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-white text-primary rounded-pill px-3 py-2 mb-3">TESTIMONIALS</span>
+                <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
+                <p class="lead">Success stories from businesses using Prime Nova POS</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 bg-white-10">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="lead mb-4">"Prime Nova POS has transformed our restaurant operations. The system is intuitive and the support team is always responsive to our needs."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-white text-primary rounded-circle p-2 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Sarah K.</h5>
+                                    <p class="mb-0 small">Restaurant Owner, Nairobi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 bg-white-10">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="lead mb-4">"The inventory management features have saved us countless hours and reduced our stock discrepancies significantly. Highly recommended!"</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-white text-primary rounded-circle p-2 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">James M.</h5>
+                                    <p class="mb-0 small">Retail Store Manager, Mombasa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 bg-white-10">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="lead mb-4">"Switching to Prime Nova was the best decision for our supermarket. The reporting features give us valuable insights into our business performance."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-white text-primary rounded-circle p-2 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">David W.</h5>
+                                    <p class="mb-0 small">Supermarket Owner, Kisumu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-6">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">OUR TEAM</span>
+                <h2 class="display-5 fw-bold mb-3">Meet Our Experts</h2>
+                <p class="lead text-muted">The talented individuals behind Prime Nova POS</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <div class="team-img mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" class="img-fluid rounded-circle">
+                        </div>
+                        <h4 class="h5 fw-bold mb-1"> Moses Mwangi Kamau</h4>
+                        <p class="text-muted mb-3">CEO & Founder</p>
+                        <p class="mb-3">With over 10 years in the tech industry, John leads our vision and strategy.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <div class="team-img mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" class="img-fluid rounded-circle">
+                        </div>
+                        <h4 class="h5 fw-bold mb-1">Collins Kipchumba Mosyemi</h4>
+                        <p class="text-muted mb-3">Head of Customer Success</p>
+                        <p class="mb-3">Ensuring our clients get the most value from our solutions every day.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-card text-center">
+                        <div class="team-img mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Team Member" class="img-fluid rounded-circle">
+                        </div>
+                        <h4 class="h5 fw-bold mb-1">Stanley Njuguna Kamau </h4>
+                        <p class="text-muted mb-3">Lead Developer</p>
+                        <p class="mb-3">Building robust and scalable POS solutions for our clients' needs.</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="bi bi-github"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Business?</h2>
+                    <p class="lead mb-4">Join hundreds of businesses that trust Prime Nova POS for their point of sale needs.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-light btn-lg px-4">Get Started</a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg px-4">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo mb-3">
+                        <img src="images/logo.png" alt="Prime Nova POS Logo" class="mb-2" style="max-height: 40px;">
+                        <h5 class="fw-bold">Prime Nova POS</h5>
+                    </div>
+                    <p>Empowering businesses across Kenya with cutting-edge POS solutions since 2020. Your success is our priority.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="pos-software.html" class="text-white-50 text-decoration-none">POS Software</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                    <h5 class="text-uppercase fw-bold mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Retail POS Systems</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Restaurant POS Solutions</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Inventory Management</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Sales Reporting</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Customer Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 class="text-uppercase fw-bold mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <span>Madukani, Kijabe street, Kijabe, Kenya</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:+254765655130" class="text-white-50 text-decoration-none">+254 765 655130</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:info@primenovapos.com" class="text-white-50 text-decoration-none">info@primenovapos.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            <span>Mon - Sat: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Prime Nova POS. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li class="list-inline-item"><span class="mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize Bootstrap tooltips -->
+    <script>
+        // Enable Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

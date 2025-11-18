@@ -1,0 +1,991 @@
+ <!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Nova POS - Complete Retail & Restaurant POS Solutions in Kenya</title>
+    <meta name="description" content="Prime Nova POS offers the best POS systems in Kenya for retail, restaurants, and hotels. Streamline your business operations with our advanced point of sale solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-none d-md-flex align-items-center">
+                    <span class="me-3"><i class="bi bi-geo-alt-fill me-1"></i> Madukani, Kijabe street, Kijabe</span>
+                    <span><i class="bi bi-clock-fill me-1"></i> Mon-Sat: 9:00 - 18:00</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+254765655130" class="text-white text-decoration-none me-3">
+                        <i class="bi bi-telephone-fill me-1"></i> +254 765 655130
+                    </a>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/254765655130" target="_blank" class="text-white" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Prime Nova POS" class="me-2 navbar-logo" height="40">
+                <span class="fw-bold">Prime Nova <span class="text-primary">POS</span></span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                            <li><a class="dropdown-item" href="pos-software.html">POS Software</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="#">Hardware</a></li>
+                            <li><a class="dropdown-item" href="#">Integration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="#demo" class="btn btn-primary px-3">Get Demo</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button class="theme-toggle-btn btn btn-outline-secondary border-0" onclick="toggleTheme()" 
+                                aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="hero-content">
+                        <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">#1 POS in Kenya</span>
+                        <h1 class="hero-title">Complete <span class="text-primary">POS System</span> for Your Business</h1>
+                        <p class="hero-subtitle">Streamline your operations, boost sales, and grow your business with our all-in-one POS solution designed for Kenyan businesses.</p>
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+                            <a href="#demo" class="btn btn-primary btn-lg px-4">Get Free Demo</a>
+                            <a href="#features" class="btn btn-outline-primary btn-lg px-4">Explore Features</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="slideshow-container">
+                        <!-- Slide 1: Supermarket -->
+                        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                            <div class="slide-content">
+                                <span class="badge bg-primary mb-2">Supermarket</span>
+                                <h3>Retail POS System</h3>
+                                <p>Advanced inventory and checkout for supermarkets</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2: Restaurant -->
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80')">
+                            <div class="slide-content">
+                                <span class="badge bg-danger mb-2">Restaurant</span>
+                                <h3>Restaurant POS</h3>
+                                <p>Table management & kitchen display system</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3: Wine & Spirits -->
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                            <div class="slide-content">
+                                <span class="badge bg-purple mb-2">Wine & Spirits</span>
+                                <h3>Liquor Store POS</h3>
+                                <p>Specialized for bottle shops and wine stores</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4: Hardware -->
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                            <div class="slide-content">
+                                <span class="badge bg-warning text-dark mb-2">Hardware</span>
+                                <h3>POS Hardware</h3>
+                                <p>Complete hardware solutions for any business</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 5: Analytics -->
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
+                            <div class="slide-content">
+                                <span class="badge bg-info mb-2">Analytics</span>
+                                <h3>Business Insights</h3>
+                                <p>Real-time reporting and analytics</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Controls -->
+                        <div class="slideshow-controls">
+                            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+                        </div>
+                        
+                        <!-- Dots Navigation -->
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide(0)"></span>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape d-none d-lg-block">
+            <svg viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1440V200C1440 200 1080 0 720 0C360 0 0 200 0 200V0Z" fill="var(--primary-soft)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="avatar-group me-3">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="avatar" alt="Customer">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar" alt="Customer">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" class="avatar" alt="Customer">
+                </div>
+                <div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-warning me-1">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <span class="text-muted small ms-1">4.8/5 (1,200+ reviews)</span>
+                    </div>
+                    <p class="small text-muted mb-0">Trusted by 5,000+ businesses in Kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Supermarket POS Section -->
+    <section class="py-6 py-lg-8 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Supermarket POS System" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <div class="bg-primary text-white p-3 rounded-circle shadow">
+                                <i class="bi bi-cart-check fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Supermarket Solution</span>
+                    <h2 class="display-5 fw-bold mb-4">Complete Supermarket <span class="text-primary">POS System</span></h2>
+                    <p class="lead text-muted mb-4">Streamline your supermarket operations with our specialized POS solution designed for the African retail market.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Barcode Scanning</h5>
+                                    <p class="text-muted mb-0">Fast and accurate scanning for quick checkouts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Inventory Management</h5>
+                                    <p class="text-muted mb-0">Real-time stock tracking and alerts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Multi-Location</h5>
+                                    <p class="text-muted mb-0">Manage multiple stores from one dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Supplier Management</h5>
+                                    <p class="text-muted mb-0">Track and manage supplier relationships</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-primary px-4">Request Demo</a>
+                        <a href="#" class="btn btn-outline-primary px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Restaurant POS Section -->
+    <section class="py-6 py-lg-8">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Restaurant POS System" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="position-absolute top-0 end-0 translate-middle">
+                            <div class="bg-danger text-white p-3 rounded-circle shadow">
+                                <i class="bi bi-egg-fried fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-5 order-lg-1" data-aos="fade-right">
+                    <span class="badge bg-danger-soft text-danger rounded-pill px-3 py-2 mb-3">Restaurant Solution</span>
+                    <h2 class="display-5 fw-bold mb-4">Restaurant & Bar <span class="text-danger">Management</span> System</h2>
+                    <p class="lead text-muted mb-4">Transform your restaurant operations with our all-in-one POS solution designed specifically for the food service industry.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-danger">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Table Management</h5>
+                                    <p class="text-muted mb-0">Efficient table tracking and management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-danger">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Kitchen Display</h5>
+                                    <p class="text-muted mb-0">Streamline kitchen operations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-danger">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Online Ordering</h5>
+                                    <p class="text-muted mb-0">Seamless integration with delivery platforms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-danger">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Recipe & Costing</h5>
+                                    <p class="text-muted mb-0">Control food costs and portion sizes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-danger px-4">Get Started</a>
+                        <a href="#" class="btn btn-outline-danger px-4">View Features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Retail Store POS Section -->
+    <section class="py-6 py-lg-8">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Retail Store POS System" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <div class="bg-primary text-white p-3 rounded-circle shadow">
+                                <i class="bi bi-shop-window fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-5" data-aos="fade-right">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Retail Solution</span>
+                    <h2 class="display-5 fw-bold mb-4">Retail Store <span class="text-primary">POS System</span></h2>
+                    <p class="lead text-muted mb-4">Transform your retail business with our intuitive POS solution designed for fashion, electronics, and general merchandise stores.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Quick Sales</h5>
+                                    <p class="text-muted mb-0">Fast and efficient checkout process</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Customer Management</h5>
+                                    <p class="text-muted mb-0">Build customer loyalty with profiles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Multi-Store Support</h5>
+                                    <p class="text-muted mb-0">Manage multiple locations easily</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Sales Reports</h5>
+                                    <p class="text-muted mb-0">Detailed analytics and insights</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-primary px-4">Request Demo</a>
+                        <a href="retail-pos.html" class="btn btn-outline-primary px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pharmacy POS Section -->
+    <section class="py-6 py-lg-8 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="fade-left">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                             alt="Pharmacy POS System" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <div class="bg-primary text-white p-3 rounded-circle shadow">
+                                <i class="bi bi-capsule fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Pharmacy Solution</span>
+                    <h2 class="display-5 fw-bold mb-4">Pharmacy <span class="text-primary">POS System</span></h2>
+                    <p class="lead text-muted mb-4">Compliant and efficient POS solution designed specifically for pharmacies and drug stores.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Drug Database</h5>
+                                    <p class="text-muted mb-0">Comprehensive medicine database</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Expiry Tracking</h5>
+                                    <p class="text-muted mb-0">Automatic expiry date monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Prescription Management</h5>
+                                    <p class="text-muted mb-0">Digital prescription handling</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Insurance Integration</h5>
+                                    <p class="text-muted mb-0">Seamless insurance claims</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-primary px-4">Request Demo</a>
+                        <a href="#" class="btn btn-outline-primary px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Store POS Section -->
+    <section class="py-6 py-lg-8">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Hardware Store POS System" class="img-fluid rounded-4 shadow" loading="lazy">
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <div class="bg-primary text-white p-3 rounded-circle shadow">
+                                <i class="bi bi-tools fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-5" data-aos="fade-right">
+                    <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Hardware Solution</span>
+                    <h2 class="display-5 fw-bold mb-4">Hardware Store <span class="text-primary">POS System</span></h2>
+                    <p class="lead text-muted mb-4">Powerful POS solution designed specifically for hardware stores and building material suppliers.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Bulk Sales</h5>
+                                    <p class="text-muted mb-0">Easy handling of bulk quantities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Supplier Management</h5>
+                                    <p class="text-muted mb-0">Track and manage suppliers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Project Quoting</h5>
+                                    <p class="text-muted mb-0">Create and manage project quotes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="bi bi-check-circle-fill fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Equipment Rental</h5>
+                                    <p class="text-muted mb-0">Manage rental inventory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-primary px-4">Request Demo</a>
+                        <a href="#" class="btn btn-outline-primary px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+        <p class="text-center text-muted mb-4 mb-lg-5">Trusted by leading businesses across Kenya</p>
+        <div class="row align-items-center justify-content-center g-4">
+            <div class="col-6 col-md-2">
+                <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Naivas" alt="Naivas" class="img-fluid grayscale" loading="lazy">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Quickmart" alt="Quickmart" class="img-fluid grayscale" loading="lazy">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Carrefour" alt="Carrefour" class="img-fluid grayscale" loading="lazy">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Java" alt="Java" class="img-fluid grayscale" loading="lazy">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Artcaffe" alt="Artcaffe" class="img-fluid grayscale" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-6 py-lg-8">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8" data-aos="fade-up">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Why Choose Us</span>
+                <h2 class="display-5 fw-bold mb-3">Everything You Need to <span class="text-primary">Succeed</span></h2>
+                <p class="lead text-muted">Our comprehensive POS solutions are designed to streamline your operations and drive growth</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-primary-soft text-primary rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-cash-coin fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Faster Checkouts</h3>
+                        <p class="text-muted mb-0">Process transactions quickly with our intuitive interface, reducing wait times and improving customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-success-soft text-success rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-box-seam fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Smart Inventory</h3>
+                        <p class="text-muted mb-0">Real-time inventory tracking with low stock alerts and automated reordering to prevent stockouts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-warning-soft text-warning rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-graph-up-arrow fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Sales Analytics</h3>
+                        <p class="text-muted mb-0">Powerful reporting tools to track sales, identify trends, and make data-driven business decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-info-soft text-info rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-phone fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Mobile Ready</h3>
+                        <p class="text-muted mb-0">Manage your business on the go with our mobile app for iOS and Android devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-danger-soft text-danger rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-shield-check fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Secure Payments</h3>
+                        <p class="text-muted mb-0">Multiple secure payment options including mobile money, cards, and cash with end-to-end encryption.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4">
+                        <div class="icon-box bg-purple-soft text-purple rounded-3 p-3 d-inline-flex mb-4">
+                            <i class="bi bi-headset fs-2"></i>
+                        </div>
+                        <h3 class="h4 mb-3">24/7 Support</h3>
+                        <p class="text-muted mb-0">Dedicated local support team available round the clock to assist you with any issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="py-6 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Interested in Retail, Restaurant and Bar POS Software in Kenya?</h2>
+            <p class="lead mb-5">Get The Best POS Price in Kenya from Prime Nova POS</p>
+            <a href="#demo" class="btn btn-light btn-lg px-5">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-6 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Client Testimonials</span>
+                <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="lead mb-4">"We have used Prime Nova POS in our restaurant and bar for over one year and I'm pleased with it. The software is very stable and reliable. I can recommend Prime Nova POS to all restaurants."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Michael S</h5>
+                                    <p class="text-muted mb-0">Director, Royal Palace Restaurant and Pub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="lead mb-4">"The team at Prime Nova provide a great software and on top it awesome support. Whenever we have any challenges, they respond very quickly and resolve the issue so that our restaurant operations run smoothly. Thumbs up!"</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Nancy K</h5>
+                                    <p class="text-muted mb-0">Owner, Friends Restaurant - Nairobi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <p class="lead mb-4">"We had been using other softwares which frustrated us. Although we were a bit hesitant to try Prime Nova POS, we are very happy with it now. It's easy to use and very reliable. I highly recommend."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="bi bi-person fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">James M</h5>
+                                    <p class="text-muted mb-0">Assistant Manager, Kuzima Comrades Sports Bar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="py-6">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">Latest Articles</span>
+                <h2 class="display-5 fw-bold mb-4">Insights & Updates</h2>
+                <p class="lead text-muted">Stay updated with the latest trends and tips for your business</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Calculating Food Costs">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculating Food Costs in Your Restaurant in Kenya</h5>
+                            <p class="text-muted">July 23, 2025</p>
+                            <a href="#" class="stretched-link text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo 1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Online Reputation">
+                        <div class="card-body">
+                            <h5 class="card-title">3 Tips for Managing Your Restaurant's Online Reputation in Kenya</h5>
+                            <p class="text-muted">July 15, 2025</p>
+                            <a href="#" class="stretched-link text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Customer Appreciation">
+                        <div class="card-body">
+                            <h5 class="card-title">Why is Customer Appreciation Important for Businesses?</h5>
+                            <p class="text-muted">June 8, 2025</p>
+                            <a href="#" class="stretched-link text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1554224155-3a58922a22c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="POS System">
+                        <div class="card-body">
+                            <h5 class="card-title">Risks of an Outdated or an Ordinary POS System in Kenya</h5>
+                            <p class="text-muted">May 28, 2025</p>
+                            <a href="#" class="stretched-link text-decoration-none">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clients Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <p class="text-center text-muted mb-4 mb-lg-5">Some of Our POS Kenya Clients</p>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Client+1" alt="Client 1" class="img-fluid grayscale" loading="lazy">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Client+2" alt="Client 2" class="img-fluid grayscale" loading="lazy">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Client+3" alt="Client 3" class="img-fluid grayscale" loading="lazy">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Client+4" alt="Client 4" class="img-fluid grayscale" loading="lazy">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://via.placeholder.com/150x60/ffffff/1a1a1a?text=Client+5" alt="Client 5" class="img-fluid grayscale" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add some custom styles for the new sections -->
+    <style>
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+        }
+        .grayscale {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .grayscale:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        .bg-primary-soft {
+            background-color: rgba(99, 102, 241, 0.1) !important;
+        }
+    </style>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Prime Nova POS" class="img-fluid">
+                    </div>
+                    <p>Prime Nova POS offers innovative solutions to streamline your business operations across Kenya.</p>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <h5>Contact Us</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i> Madukani, Kijabe street, Kijabe</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill me-1"></i> +254 765 655130</p>
+                    <p><i class="bi bi-whatsapp me-1"></i> <a href="https://wa.me/254765655130" class="text-decoration-none">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="text-center mb-0">© 2025 Prime Nova POS Solutions. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/254765655130" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <button class="cta-button" onclick="window.location.href='#demo'">Get Demo</button>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- AOS Initialization -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
