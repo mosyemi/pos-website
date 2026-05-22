@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,34 +22,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-none d-md-flex align-items-center">
+                    <span class="me-3"><i class="bi bi-geo-alt-fill me-1"></i> Madukani, Kijabe street, Kijabe</span>
+                    <span><i class="bi bi-clock-fill me-1"></i> Mon-Sat: 9:00 - 18:00</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+254765655130" class="text-white text-decoration-none me-3">
+                        <i class="bi bi-telephone-fill me-1"></i> +254 765 655130
+                    </a>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/254765655130" target="_blank" class="text-white" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="images/logo.png" alt="Prime Nova POS" height="40" class="me-2">
-                Prime Nova <span class="text-primary">POS</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Prime Nova POS" class="me-2 navbar-logo" height="40">
+                <span class="fw-bold">Prime Nova <span class="text-primary">POS</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="solutionsDropdown" data-bs-toggle="dropdown">Solutions</a>
-                        <ul class="dropdown-menu">
+                        <a class="nav-link dropdown-toggle active" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                            <li><a class="dropdown-item" href="pos-software.html">POS Software</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item active" href="restaurant-pos.html">Restaurant POS</a></li>
                             <li><a class="dropdown-item" href="supermarket-pos.html">Supermarket POS</a></li>
-                            <li><a class="dropdown-item" href="wine-spirits-pos.html">Wine & Spirits POS</a></li>
                             <li><a class="dropdown-item" href="retail-pos.html">Retail POS</a></li>
+                            <li><a class="dropdown-item" href="wine-spirits-pos.html">Wine & Spirits POS</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="index.html#demo" class="btn btn-primary px-3">Get Demo</a></li>
+                    <li class="nav-item ms-2">
+                        <button class="theme-toggle-btn btn btn-outline-secondary border-0" onclick="toggleTheme()" aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
                 </ul>
-                <div class="ms-lg-3 mt-3 mt-lg-0">
-                    <a href="#demo" class="btn btn-primary">Get Demo</a>
-                </div>
             </div>
         </div>
     </nav>
@@ -63,7 +90,7 @@
                     <h1 class="display-4 fw-bold mb-3">Restaurant <span class="text-danger">POS System</span></h1>
                     <p class="lead mb-4">Streamline your restaurant operations with our powerful POS solution.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="#demo" class="btn btn-danger btn-lg px-4">Request Demo</a>
+                        <a href="index.html#demo" class="btn btn-danger btn-lg px-4">Request Demo</a>
                         <a href="#features" class="btn btn-outline-danger btn-lg px-4">View Features</a>
                     </div>
                 </div>
@@ -126,7 +153,7 @@
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Restaurant?</h2>
             <p class="lead mb-4">Join thousands of restaurants that trust Prime Nova POS.</p>
-            <a href="#demo" class="btn btn-light btn-lg px-4">Request Demo</a>
+            <a href="index.html#demo" class="btn btn-light btn-lg px-4">Request Demo</a>
         </div>
     </section>
 

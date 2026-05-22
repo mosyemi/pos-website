@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,67 +25,65 @@
     <link rel="stylesheet" href="css/pos-styles.css">
 </head>
 <body>
-    <!-- Info Bar -->
-    <div class="bg-primary text-white py-2">
+    <div class="top-bar bg-dark text-white py-2">
         <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="mb-2 mb-md-0">
-                    <i class="bi bi-geo-alt"></i> Madukani, Kijabe street, Kijabe
-                    <span class="mx-3 d-none d-md-inline">|</span>
-                    <i class="bi bi-clock"></i> Mon - Sat: 9:00 - 18:00 | Sunday CLOSED
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-none d-md-flex align-items-center">
+                    <span class="me-3"><i class="bi bi-geo-alt-fill me-1"></i> Madukani, Kijabe street, Kijabe</span>
+                    <span><i class="bi bi-clock-fill me-1"></i> Mon-Sat: 9:00 - 18:00</span>
                 </div>
-                <div class="social-links">
-                    <a href="https://facebook.com" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                    <span class="ms-2"><i class="bi bi-telephone"></i> +254 765 655130 | +254 742 784172</span>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+254765655130" class="text-white text-decoration-none me-3">
+                        <i class="bi bi-telephone-fill me-1"></i> +254 765 655130
+                    </a>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/254765655130" target="_blank" class="text-white" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="images/logo.png" alt="Prime Nova POS" height="40" class="me-2">
-                <span class="text-dark">Prime Nova</span> <span class="text-primary">POS</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Prime Nova POS" class="me-2 navbar-logo" height="40">
+                <span class="fw-bold">Prime Nova <span class="text-primary">POS</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="posSoftwareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            POS Software
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="posSoftwareDropdown">
-                            <li><a class="dropdown-item" href="restaurant-pos.html"><i class="bi bi-cup-hot me-2"></i>Restaurant & Bar POS</a></li>
-                            <li><a class="dropdown-item active" href="supermarket-pos.html"><i class="bi bi-cart-check me-2"></i>Supermarket POS</a></li>
-                            <li><a class="dropdown-item" href="retail-pos.html"><i class="bi bi-shop me-2"></i>Retail POS</a></li>
-                            <li><a class="dropdown-item" href="wine-spirits-pos.html"><i class="bi bi-cup-straw me-2"></i>Wine & Spirits POS</a></li>
+                        <a class="nav-link dropdown-toggle active" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                            <li><a class="dropdown-item" href="pos-software.html">POS Software</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="pos-software.html"><i class="bi bi-grid me-2"></i>All POS Solutions</a></li>
+                            <li><a class="dropdown-item" href="restaurant-pos.html">Restaurant POS</a></li>
+                            <li><a class="dropdown-item active" href="supermarket-pos.html">Supermarket POS</a></li>
+                            <li><a class="dropdown-item" href="retail-pos.html">Retail POS</a></li>
+                            <li><a class="dropdown-item" href="wine-spirits-pos.html">Wine & Spirits POS</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a href="#contact" class="btn btn-primary px-4">Get Demo</a>
+                        <a href="index.html#demo" class="btn btn-primary px-3">Get Demo</a>
                     </li>
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <button class="btn btn-outline-secondary px-3" onclick="toggleTheme()">
+                    <li class="nav-item ms-2">
+                        <button class="theme-toggle-btn btn btn-outline-secondary border-0" onclick="toggleTheme()" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
                         </button>
                     </li>
@@ -103,7 +101,7 @@
                     <h1 class="display-4 fw-bold mb-4">Supermarket POS Software in Kenya</h1>
                     <p class="lead mb-4">Transform your supermarket operations with our powerful and intuitive point of sale system designed specifically for the Kenyan market. Streamline your inventory, sales, and customer management all in one place.</p>
                     <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#contact" class="btn btn-light btn-lg px-4">
+                        <a href="index.html#demo" class="btn btn-light btn-lg px-4">
                             <i class="bi bi-display me-2"></i> Get Free Demo
                         </a>
                         <a href="#features" class="btn btn-outline-light btn-lg px-4">
@@ -268,7 +266,7 @@
                 </div>
                 
                 <div class="text-center mt-5">
-                    <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">
+                    <a href="index.html#demo" class="btn btn-primary btn-lg px-5 py-3">
                         <i class="bi bi-calendar-check me-2"></i> Schedule a Free Demo
                     </a>
                     <p class="small text-muted mt-3 mb-0">No credit card required • 14-day free trial • Cancel anytime</p>
@@ -285,7 +283,7 @@
                     <h2 class="display-4 fw-bold mb-4">Ready to Transform Your Supermarket?</h2>
                     <p class="lead mb-5">Join 500+ supermarkets across Kenya who trust Prime Nova POS to power their business</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="#contact" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+                        <a href="index.html#demo" class="btn btn-light btn-lg px-5 py-3 fw-bold">
                             <i class="bi bi-chat-dots me-2"></i> Get Started Today
                         </a>
                         <a href="tel:+254765655130" class="btn btn-outline-light btn-lg px-4 py-3">
@@ -365,7 +363,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize AOS animation

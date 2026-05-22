@@ -120,8 +120,6 @@ function currentSlide(n) {
 
 // Arrow controls
 function plusSlides(n) {
-    if (isTransitioning) return;
-    isTransitioning = true;
     advanceSlide(n);
 }
 
@@ -155,6 +153,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     } catch (e) {
         if (themeIcon) themeIcon.className = 'bi bi-moon-stars-fill';
+    }
+
+    const contactForm = document.getElementById('contact-form');
+    const submitButton = document.getElementById('submit-btn');
+    const successMessage = document.getElementById('success-message');
+
+    if (contactForm && submitButton && successMessage) {
+        submitButton.addEventListener('click', function () {
+            const requiredFields = contactForm.querySelectorAll('input[required], textarea[required]');
+            const isValid = Array.from(requiredFields).every(field => field.value.trim());
+
+            if (!isValid) {
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) field.classList.add('is-invalid');
+                });
+                return;
+            }
+
+            requiredFields.forEach(field => field.classList.remove('is-invalid'));
+            contactForm.classList.add('d-none');
+            successMessage.classList.remove('d-none');
+        });
     }
     
     // Add touch event listeners for mobile swipe
