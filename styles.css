@@ -1,3 +1,135 @@
+/* Hero background slideshow */
+.hero-section {
+    position: relative;
+    min-height: 480px;
+    padding: 0;
+    overflow: hidden;
+}
+.hero-bg-slideshow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.slide-bg-img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    filter: brightness(0.55) blur(1px);
+}
+.slide-bg-img.active {
+    opacity: 1;
+    z-index: 2;
+}
+.hero-bg-slideshow .slideshow-dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.hero-bg-slideshow .dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+    background: #fff8;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.3s, border 0.3s;
+}
+.hero-bg-slideshow .dot.active {
+    background: #fff;
+    border: 2px solid #fff;
+}
+.hero-overlay-content {
+    position: relative;
+    z-index: 10;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.simple-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.slide-img {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+.slide-img.active {
+    display: block;
+}
+.slideshow-dots {
+    text-align: center;
+    margin-top: 1rem;
+}
+.slideshow-dots .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.slideshow-dots .dot.active {
+    background: #1e293b;
+}
+
+/* Floating Social Icons */
+.floating-socials {
+    position: fixed;
+    top: 40%;
+    left: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    color: #fff;
+    font-size: 1.5rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.floating-socials a[aria-label="WhatsApp"] {
+    background: #25D366;
+}
+.floating-socials a[aria-label="Messenger"] {
+    background: #0084FF;
+}
+.floating-socials a[aria-label="YouTube"] {
+    background: #FF0000;
+}
+.floating-socials a[aria-label="Facebook"] {
+    background: #1877F3;
+}
+.floating-socials a:hover {
+    filter: brightness(0.92) saturate(1.2);
+    transform: translateY(-2px) scale(1.08);
+}
+.floating-socials a i {
+    color: #fff !important;
+}
 /* Define CSS custom properties for theming */
 :root {
     --primary: #f97316;
@@ -571,20 +703,20 @@ html {
 }
 
 /* Hero Section */
+
 .hero-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 6rem 0;
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    z-index: 1;
-    padding: 80px 0 0; /* Add top padding for fixed navbar */
+    background: #fff;
+    color: #1e293b;
+    min-height: unset;
+    padding: 5rem 0 2rem 0;
+    display: block;
+    box-shadow: none;
+}
+
+.minimal-hero {
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #1e293b !important;
 }
 
 .hero-container {

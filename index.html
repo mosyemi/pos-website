@@ -30,7 +30,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Bar -->
+        <!-- Floating Social Icons -->
+        <div class="floating-socials">
+            <a href="https://wa.me/254765655130" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://m.me/yourpage" target="_blank" aria-label="Messenger"><i class="bi bi-messenger"></i></a>
+            <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+        <!-- Top Bar -->
     <div class="top-bar bg-dark text-white py-2">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
@@ -113,91 +120,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <div class="hero-content">
-                        <span class="badge bg-primary-soft text-primary rounded-pill px-3 py-2 mb-3">#1 POS in Kenya</span>
-                        <h1 class="hero-title" aria-live="polite">Complete <span class="text-primary">POS System</span> for Your Business</h1>
-                        <p class="hero-subtitle">Streamline your operations, boost sales, and grow your business with our all-in-one POS solution designed for Kenyan businesses.</p>
-                        <div class="hero-buttons d-flex flex-wrap gap-3">
-                            <a href="#demo" class="btn btn-primary btn-lg px-4">Get Free Demo</a>
-                            <a href="#features" class="btn btn-outline-primary btn-lg px-4">Explore Features</a>
-                        </div>
-                    </div>
+    <section class="hero-section minimal-hero bg-white py-6">
+            <div class="hero-bg-slideshow">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="slide-bg-img active" alt="POS System 1">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" class="slide-bg-img" alt="POS System 2">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="slide-bg-img" alt="POS System 3">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="slide-bg-img" alt="POS System 4">
+                <div class="slideshow-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-                    <div class="slideshow-container">
-                        <!-- Slide 1: Supermarket -->
-                        <div class="slide active">
-                            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Supermarket POS System" class="img-fluid rounded-4 shadow" loading="eager" fetchpriority="high" decoding="async" style="width:100%;height:auto;object-fit:cover;">
-                            <div class="slide-content">
-                                <span class="badge bg-primary mb-2">Supermarket</span>
-                                <h3>Retail POS System</h3>
-                                <p>Advanced inventory and checkout for supermarkets</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 2: Restaurant -->
-                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80')">
-                            <div class="slide-content">
-                                <span class="badge bg-danger mb-2">Restaurant</span>
-                                <h3>Restaurant POS</h3>
-                                <p>Table management & kitchen display system</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 3: Wine & Spirits -->
-                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
-                            <div class="slide-content">
-                                <span class="badge bg-purple mb-2">Wine & Spirits</span>
-                                <h3>Liquor Store POS</h3>
-                                <p>Specialized for bottle shops and wine stores</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 4: Hardware -->
-                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
-                            <div class="slide-content">
-                                <span class="badge bg-warning text-dark mb-2">Hardware</span>
-                                <h3>POS Hardware</h3>
-                                <p>Complete hardware solutions for any business</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Slide 5: Analytics -->
-                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')">
-                            <div class="slide-content">
-                                <span class="badge bg-info mb-2">Analytics</span>
-                                <h3>Business Insights</h3>
-                                <p>Real-time reporting and analytics</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Navigation Controls -->
-                        <div class="slideshow-controls">
-                            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
-                            <span class="next" onclick="plusSlides(1)">&#10095;</span>
-                        </div>
-                        
-                        <!-- Dots Navigation -->
-                        <div class="slideshow-dots">
-                            <span class="dot active" onclick="currentSlide(0)"></span>
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                        </div>
+            </div>
+            <div class="container hero-overlay-content">
+                <div class="row align-items-center justify-content-center" style="min-height: 400px;">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="display-4 fw-bold mb-3" style="color:#fff; text-shadow:0 2px 16px rgba(0,0,0,0.4);">Complete POS System for Your Business</h1>
+                        <p class="lead mb-4" style="color:#f3f4f6; text-shadow:0 1px 8px rgba(0,0,0,0.3);">Streamline your operations, boost sales, and grow your business with our all-in-one POS solution designed for Kenyan businesses.</p>
+                        <a href="#demo" class="btn btn-primary btn-lg px-4">Get Free Demo</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-shape d-none d-lg-block">
-            <svg viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H1440V200C1440 200 1080 0 720 0C360 0 0 200 0 200V0Z" fill="var(--primary-soft)"/>
-            </svg>
-        </div>
     </section>
 
     <!-- Trust Section -->
@@ -970,5 +914,30 @@
             once: true
         });
     </script>
+        <!-- Simple Slideshow Script (moved for reliability) -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.slide-bg-img');
+                const dots = document.querySelectorAll('.hero-bg-slideshow .dot');
+                function showSlide(n) {
+                    if (!slides.length) return;
+                    slides.forEach((slide, i) => {
+                        slide.classList.toggle('active', i === n);
+                        dots[i].classList.toggle('active', i === n);
+                    });
+                    currentSlide = n;
+                }
+                function nextSlide() {
+                    let n = (currentSlide + 1) % slides.length;
+                    showSlide(n);
+                }
+                dots.forEach((dot, i) => {
+                    dot.onclick = () => showSlide(i);
+                });
+                showSlide(0);
+                setInterval(nextSlide, 3500);
+            });
+        </script>
 </body>
 </html>
