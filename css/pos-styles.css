@@ -496,3 +496,98 @@ h1, h2, h3, h4, h5, h6 {
 [data-bs-theme="dark"] .text-muted {
     color: #cbd5e1 !important;
 }
+
+/* Shared footer styling for Solutions detail pages */
+.solutions-footer {
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+    background: #111827 !important;
+}
+
+.solutions-footer .footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.9rem;
+}
+
+.solutions-footer .footer-brand-logo {
+    width: auto;
+    max-height: 40px;
+    flex-shrink: 0;
+}
+
+.solutions-footer .footer-brand-text {
+    color: #f8fafc;
+    font-size: 1.45rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.solutions-footer .footer-about {
+    color: #cbd5e1;
+    max-width: 320px;
+}
+
+.solutions-footer h5 {
+    color: #f8fafc;
+    font-weight: 700;
+}
+
+.solutions-footer .footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.solutions-footer .footer-links a:hover {
+    color: #3b82f6;
+    transform: none;
+}
+
+.solutions-footer .footer-contact {
+    color: #cbd5e1;
+}
+
+.solutions-footer hr {
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+.solutions-footer .footer-bottom {
+    color: #94a3b8;
+}
+
+[data-bs-theme="dark"] .solutions-footer {
+    background: #020617 !important;
+    border-top-color: rgba(148, 163, 184, 0.22);
+}
+
+[data-bs-theme="dark"] .solutions-footer .footer-brand-text,
+[data-bs-theme="dark"] .solutions-footer h5 {
+    color: #f8fafc;
+}
+
+[data-bs-theme="dark"] .solutions-footer .footer-about,
+[data-bs-theme="dark"] .solutions-footer .footer-links a,
+[data-bs-theme="dark"] .solutions-footer .footer-contact,
+[data-bs-theme="dark"] .solutions-footer .footer-bottom {
+    color: #cbd5e1;
+}
+
+[data-bs-theme="dark"] .solutions-footer .footer-links a:hover {
+    color: #93c5fd;
+}
+
+@media (max-width: 767px) {
+    .solutions-footer {
+        text-align: center;
+    }
+
+    .solutions-footer .footer-brand {
+        justify-content: center;
+    }
+
+    .solutions-footer .footer-about {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
